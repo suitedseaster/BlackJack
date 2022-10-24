@@ -1,8 +1,8 @@
 /*
 =====================================================
-Name        :assignment3.cpp
+Name        :BlackJack.cpp
 Author      :Sean WANG 
-Description :assignment 3 in C++
+Description :BlackJack basic game in C++
 =====================================================
 */
 
@@ -13,17 +13,6 @@ Description :assignment 3 in C++
 #include <ctime>
 
 using namespace std;
-
-
-/* NOTE TO TA CORRECTING THIS ASSINGMENT
-ON MY COMPUTER, THE MAIN FUNCTION WORKS, MEANING I CAN PLAY THE BLACKJACK GAME PERFECTLY FINE, PROMPTING ME TO PLAY AGAIN
-EVERY TIME.
-HOWEVER, I RAN IT ON MY OTHER LAPTOP TO TEST THE CODE AGAIN, AND IT WAS CRASHING MULTIPLE TIMES BEFORE FINALLY WORKING. (TOOK ABOUT 10 TRIES WITHOUT 
-CHANGING THE CODE)
-I do not know what is causing it, but if it doesn't work for you, please contact me via email sw.one@live.com or sean.wang2@mail.mcgill.ca
-I have recorded a sequence of the program running successfully over multiple trials without failure as proof that this works.
-I have not changed any code from the time of recording and the time of submission, except comments to further increase readability of code
-*/
 
 class Card{
     public:
@@ -327,7 +316,7 @@ class BlackJackGame{
 int main(){
     std::srand(unsigned (std::time(0)));
 
-    cout << "\tWelcome to the Comp322 Blackjack game!" << endl << endl;
+    cout << "\tWelcome to the Blackjack game!" << endl << endl;
     BlackJackGame game;
     // The main loop of the game
     
@@ -343,7 +332,7 @@ int main(){
     cout << endl << endl;
     playAgain = (answer == 'y' ? true : false);
     }
-    cout <<"Gave over!";
+    cout <<"Game over!";
     return 0;
 
 
